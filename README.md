@@ -19,11 +19,11 @@ We need only 4 kind of branches and three environments:
 * TEST environment, for testing purpose.
 
 Commands:
-* sgflow init
-* sgflow feature start $name
-* sgflow feature test
-* sgflow feature online
-* sgflow hotfix start [$tag_name] $name 
-* sgflow hotfix test
-* sgflow hotfix online
-* sgflow update
+* sgflow init, make develop branch avalable
+* sgflow feature start $name, create a $name branch
+* sgflow feature test, merge current branch into develop and push to remote repository
+* sgflow feature online, 
+* sgflow hotfix start [$tag_name] $name, create a $name branch from $tag_name. If not specified which tag, the latest tag will be used. 
+* sgflow hotfix test, merge current branch into develop and push to remote origin
+* sgflow hotfix online, merge current branch into master and push to remote origin
+* sgflow update, git merge origin master into current branch.
